@@ -1,0 +1,242 @@
+body {
+
+  background-color: black;
+  color: white;
+}
+
+
+.titulo {
+  font-family: 'Lucida Sans';
+  font-size: 36px;
+  text-align: right;
+}
+
+#titulo1 {
+  font-family: 'Lucida Sans';
+  font-size: 10px;
+  text-align: right;
+}
+
+
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  padding: 10px;
+  margin: 20px;
+}
+
+div {
+
+  background-color: rgb(255, 178, 127);
+}
+
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.greeting {
+  text-align: center;
+  
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+@media (max-width: 1000px) {
+  .column {
+    flex: 100%;
+  }
+}
+
+
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: black;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+
+li>a {
+  padding: 8px 24px;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+
+.button-menu-toggle {
+  display: none;
+}
+
+.imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.vidContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+/* de aca para abajo estiliza la barra de navegacion */
+
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: black;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+
+li>a {
+  padding: 8px 24px;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+
+.button-menu-toggle {
+  display: none;
+}
+
+
+/* . Agregar JavaScript para alternar la visibilidad de los enlaces de navegación
+ cuando se haga clic en el botón “Menú”. 
+ Este código oculta los enlaces de navegación y muestra el botón “Menú” en pantallas 
+ con un ancho de 768 píxeles o menos, y utiliza una clase extra para poder hacer que 
+ el botón menú despliegue los enlaces .
+ */
+
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+
+
+  .nav-links {
+    display: none;
+  }
+
+
+  .button-menu-toggle {
+    display: block;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: rgba(20, 20, 20, 0.95);
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap: 70px;
+    font-size: 40px;
+
+
+  }
+}
+
+/* .imgContainer{
+  flex-direction: column;
+} */
+
+
+.pie {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(44, 20, 179);
+
+
+  max-width: 800px;
+  margin: 10px;
+  padding: 20px;
+}
